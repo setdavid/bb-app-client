@@ -11,7 +11,8 @@ function App(props) {
   const {
     loggedIn,
     logIn,
-    logInMessage
+    logInMessage,
+    refreshAccessToken
   } = props
 
   return (
@@ -30,6 +31,7 @@ function App(props) {
         <Login
           logIn={logIn}
           logInMessage={logInMessage}
+          refreshAccessToken={refreshAccessToken}
         />
       </header>
     </div>
@@ -38,7 +40,8 @@ function App(props) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logIn: (value1, value2) => dispatch(actions.logIn(value1, value2))
+    logIn: (value1, value2) => dispatch(actions.logIn(value1, value2)),
+    refreshAccessToken: () => dispatch(actions.refreshAccessToken())
   };
 }
 

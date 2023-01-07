@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "../css/Login.css"
 
 const Login = (props) => {
-    let { logIn, logInMessage } = props
+    let { logIn, logInMessage, refreshAccessToken } = props
 
     // const dispatchGetAccessToken = () => {
     //     getAccessToken()
@@ -15,7 +15,10 @@ const Login = (props) => {
             <div className='row'>
                 <div className='col-12'>
                     <div className='row text-center'>
-                        <h1 className='col-12' onClick={() => { logIn("setdavid", "setdavid0501") }}>
+                        <h1 className='col-12'
+                            onClick={() => { logIn("setdavid", "setdavid0501") }}
+                        // onClick={() => { refreshAccessToken() }}
+                        >
                             Let's Go!
                         </h1>
                     </div>
