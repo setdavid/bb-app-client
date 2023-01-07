@@ -1,0 +1,12 @@
+#navbar {
+    position: fixed;
+    height: var(--navbar-height);
+    box-shadow: 1.0px 2.1px 2.1px hsl(0deg 0% 0% / 0.47);
+    background-color: white;
+    z-index: 1000;
+}
+
+#navbar h3 {
+    font-weight: bold;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,8 @@
+#login {
+    width: 100vw;
+    height: calc(100vh - var(--navbar-height));
+}
+
+#login h1 {
+    font-size: 64px;
+}

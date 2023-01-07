@@ -1,0 +1,20 @@
+#main-display-name {
+    padding-top: 1rem;
+}
+
+#search-bar {
+    width: 100%;
+}
+
+#search-bar-container {
+    margin-top: 2rem;
+}
+
+#track-audio-features-name,
+#track-audio-features-artists {
+    display: inline;
+}
+
+#track-audio-features-heading {
+    margin-top: 2rem;
+}
