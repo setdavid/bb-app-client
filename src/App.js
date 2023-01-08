@@ -6,6 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import selectors from "./selectors";
 import actions from "./actions";
 import Navbar from "./components/Navbar";
+import React from "react";
 
 function App(props) {
   const {
@@ -18,21 +19,19 @@ function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
-        <div style={{ height: "var(--navbar-height)" }} />
-        {/* {loggedIn ?
-          <Main
-          /> :
+        {loggedIn ?
+          <React.Fragment>
+            <Navbar />
+            <div style={{ height: "var(--navbar-height)" }} />
+            <Main
+            />
+          </React.Fragment> :
           <Login
             logIn={logIn}
             logInMessage={logInMessage}
+            refreshAccessToken={refreshAccessToken}
           />
-          } */}
-        <Login
-          logIn={logIn}
-          logInMessage={logInMessage}
-          refreshAccessToken={refreshAccessToken}
-        />
+        }
       </header>
     </div>
   );

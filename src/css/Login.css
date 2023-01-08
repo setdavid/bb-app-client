@@ -4,5 +4,27 @@
 }
 
 #login h1 {
-    font-size: 64px;
+    font-size: 48px;
+}
+
+#login-message {
+    display: flex;
+    justify-content: center;
+    color: red;
+    padding-bottom: 2rem;
+}
+
+#login-message>div {
+    position: absolute;
+}
+
+#login-password-input,
+#login-button {
+    padding-top: 1rem;
+}
+
+#login-card {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid black
 }

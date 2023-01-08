@@ -36,10 +36,12 @@ function* handleRefreshAccessToken(action) {
         const response = yield call(requestRefreshAccessToken)
         const data = response.data
         sessionStorage.setItem("access_token", data.access_token)
+        yield put(actions.setLoggedIn(true))
         yield delayRefreshAccessToken(data.expires_in)
     } catch (err) {
         const errorRes = err.response
         console.log(errorRes)
+        yield put(actions.setLoggedIn(false))
     }
 }
 

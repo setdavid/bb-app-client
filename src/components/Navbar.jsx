@@ -6,7 +6,7 @@ const Navbar = (props) => {
         <div id='navbar' className='container-fluid align-items-center d-flex'>
             <div className='row'>
                 <h3 className='col-12'>
-                    SPOLITY
+                    THE BB APP
                 </h3>
             </div>
         </div>
