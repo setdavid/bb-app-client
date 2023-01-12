@@ -1,0 +1,5 @@
+const TOGGLE_NAVBAR_PANEL = "TOGGLE_NAVBAR_PANEL"
+
+export default {
+    TOGGLE_NAVBAR_PANEL
+}

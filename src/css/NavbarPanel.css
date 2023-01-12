@@ -1,0 +1,21 @@
+#navbar-panel {
+    position: absolute;
+    left: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    opacity: 0;
+    height: 100vh;
+    max-height: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#navbar-panel>.row>.col-12 {
+    height: 100vh;
+}
+
+#navbar-panel-link-group h5 {
+    cursor: pointer;
+}

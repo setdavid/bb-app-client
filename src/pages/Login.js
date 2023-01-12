@@ -8,7 +8,7 @@ const Login = (props) => {
     let [passwordInput, setPasswordInput] = useState("")
 
     // const dispatchGetAccessToken = () => {
-    //     getAccessToken()
+
     // }
 
     // useEffect(dispatchGetAccessToken, [])
@@ -35,7 +35,7 @@ const Login = (props) => {
                         <div className='col-auto'>
                             <div className='row text-center'>
                                 <h1 className='col-12'>
-                                    Let's go!
+                                    Login
                                 </h1>
                             </div>
                             <div className='row'>

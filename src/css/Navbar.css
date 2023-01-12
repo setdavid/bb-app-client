@@ -1,12 +1,21 @@
 #navbar {
     position: fixed;
     height: var(--navbar-height);
-    box-shadow: 1.0px 2.1px 2.1px hsl(0deg 0% 0% / 0.47);
+    /* box-shadow: 1.0px 2.1px 2.1px hsl(0deg 0% 0% / 0.47); */
     background-color: white;
     z-index: 1000;
 }
 
-#navbar h3 {
-    font-weight: bold;
-    margin-left: 0.5rem;
+#navbar>.row {
+    height: var(--navbar-height);
+}
+
+#navbar-plus-icon {
+    padding-right: 0.5rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: 1000;
+    transform: rotate(0);
+    color: black;
+    cursor: pointer;
 }
